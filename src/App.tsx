@@ -4,6 +4,7 @@ import './App.css';
 import SimpleTypes from "./Components/SimpleTypes";
 import TypeUnderstanding from "./Components/TypeUnderstanding";
 import Interfaces from "./Components/Interfaces";
+import Enum from "./Components/Enum";
 
 function App() {
 
@@ -13,9 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-          <SimpleTypes />
-          <TypeUnderstanding />
-          <Interfaces />
+        <Enum />
       </header>
     </div>
   );
