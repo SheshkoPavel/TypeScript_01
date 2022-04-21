@@ -2,13 +2,6 @@ import React from 'react';
 
 const TypeUnderstanding = () => {
 
-    //Function typing
-    const sayMyName = (name: string): void => {
-        name = name + ' Nasral na stolik';
-        console.log(name)
-    }
-    sayMyName('Tolik')
-
     //Type
     type Login = string
     const login: Login = 'Some text'
