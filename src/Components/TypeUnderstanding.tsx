@@ -25,7 +25,10 @@ const TypeUnderstanding = () => {
     return (
         <div>
             {id} <br/>
+<<<<<<< HEAD
             {login} <br/>
+=======
+>>>>>>> origin/master
             {ABC} <br/>
         </div>
     );
