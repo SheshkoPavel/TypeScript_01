@@ -65,6 +65,7 @@ const Interfaces = () => {
         marginTop: '2px',
         borderRadius: '5px'
     }
+    console.log(css)
 
     return (
         <div>
