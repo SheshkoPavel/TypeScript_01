@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import SimpleTypes from "./Components/SimpleTypes";
 import TypeUnderstanding from "./Components/TypeUnderstanding";
+import Interfaces from "./Components/Interfaces";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
           <SimpleTypes />
           <TypeUnderstanding />
+          <Interfaces />
       </header>
     </div>
   );

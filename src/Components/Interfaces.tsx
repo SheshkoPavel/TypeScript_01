@@ -1,4 +1,5 @@
 import React from 'react';
+import {Interface} from "readline";
 
 const Interfaces = () => {
 
@@ -19,6 +20,7 @@ const Interfaces = () => {
             height: 15
         }
     }
+    // rect1.id = 6 Error, because readonly property
     console.log(rect1)
 
 
@@ -34,6 +36,35 @@ const Interfaces = () => {
     console.log(rect2)
 
     const rect3 = {} as Rect
+//--------------------------------
+
+    interface RectWithArea extends Rect {
+        getArea: () => number
+    }
+
+    const rect4: RectWithArea = {
+        id: 10,
+        color: 'maroon',
+        size: {
+            width: 150,
+            height: 50
+        },
+        getArea() {
+            return this.size.width * this.size.height
+        }
+    }
+    console.log(rect4.getArea())
+
+//--------------------------------------
+    interface Styles {
+        [key: string]: string
+    }
+
+    const css: Styles = {
+        border: '1px solid black',
+        marginTop: '2px',
+        borderRadius: '5px'
+    }
 
     return (
         <div>
