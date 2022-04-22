@@ -1,6 +1,7 @@
 import {combineReducers} from "redux";
 import {userReducer} from "./userReducer";
 
-export const rootReducer = combineReducers({
+//Legacy using. For now, we use configureStore against createStore
+const rootReducer = combineReducers({
     user: userReducer,
 })
