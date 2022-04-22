@@ -2,12 +2,14 @@ import {applyMiddleware, legacy_createStore} from "redux";
 import thunk from "redux-thunk";
 import { configureStore } from '@reduxjs/toolkit'
 import {userReducer} from "./reducers/userReducer";
+import {todoReducer} from "./reducers/todoReducer";
 
 //export const store = legacy_createStore(rootReducer, applyMiddleware(thunk))
 
 export const store = configureStore({
     reducer: {
-        user: userReducer
+        user: userReducer,
+        todo: todoReducer
     }
 })
 

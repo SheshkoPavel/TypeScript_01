@@ -7,17 +7,23 @@ import Interfaces from "./Components/Interfaces";
 import Enum from "./Components/Enum";
 import Functions from "./Components/Functions";
 import UserList from "./Components/UserList";
+import TodoList from "./Components/TodoList";
 
 function App() {
 
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-          <UserList />
-      </header>
-    </div>
+      <div>
+            <div className="App">
+              <header className="App-header">
+                <img src={logo} className="App-logo" alt="logo" />
+                  <UserList />
+                  <hr/>
+                  <TodoList />
+              </header>
+      </div>
+
+      </div>
   );
 }
 
